@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!-- UCF COP3330 Fall 2021 Assignment 5 Solution -->
+<!-- Copyright 2021 James Karlinski -->
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.MainController">
+    <children>
+        <Label fx:id="todoListLabel" layoutX="12.0" layoutY="4.0" minHeight="16" minWidth="69" prefHeight="28.0" prefWidth="106.0" text="Todo Lists" textAlignment="CENTER">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font></Label>
+        <Button fx:id="btnAddTodoList" layoutX="244.0" layoutY="38.0" mnemonicParsing="false" onAction="#addTodoList" prefHeight="25.0" prefWidth="59.0" text="Add List" textAlignment="CENTER">
+            <font>
+                <Font name="Bernard MT Condensed" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnEditTodoList" layoutX="96.0" layoutY="75.0" mnemonicParsing="false" onAction="#openEditListWindow" prefHeight="25.0" prefWidth="94.0" text="Edit Selected" textAlignment="CENTER">
+            <font>
+                <Font name="Bernard MT Condensed" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnDeleteTodoList" layoutX="196.0" layoutY="75.0" mnemonicParsing="false" onAction="#deleteSelectedTodoList" prefHeight="25.0" prefWidth="106.0" text="Delete Selected" textAlignment="CENTER">
+            <font>
+                <Font name="Bernard MT Condensed" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnAddTodo" layoutX="825.0" layoutY="38.0" mnemonicParsing="false" onAction="#addTodo" prefHeight="25.0" prefWidth="70.0" text="Add Todo" textAlignment="CENTER">
+            <font>
+                <Font name="Bernard MT Condensed" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnEditTodo" layoutX="689.0" layoutY="75.0" mnemonicParsing="false" onAction="#openEditTodoWindow" prefHeight="25.0" prefWidth="94.0" text="Edit Selected" textAlignment="CENTER">
+            <font>
+                <Font name="Bernard MT Condensed" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnDeleteTodo" layoutX="790.0" layoutY="75.0" mnemonicParsing="false" onAction="#deleteSelectedTodo" prefHeight="25.0" prefWidth="106.0" text="Delete Selected" textAlignment="CENTER">
+            <font>
+                <Font name="Bernard MT Condensed" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="347.0" layoutY="10.0" prefHeight="20.0" prefWidth="79.0" text="Todos">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblTodoLists" layoutX="11.0" layoutY="115.0" prefHeight="352.0" prefWidth="292.0">
+            <columns>
+                <TableColumn fx:id="title" prefWidth="291.0" sortable="false" text="Title" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tblTodos" layoutX="346.0" layoutY="113.0" prefHeight="352.0" prefWidth="550.0">
+            <columns>
+                <TableColumn fx:id="description" prefWidth="357.0" text="Description" />
+                <TableColumn fx:id="dueDate" prefWidth="112.0" text="Due Date" />
+                <TableColumn fx:id="status" text="Status" />
+            </columns>
+        </TableView>
+        <TextField fx:id="todoListTitle" layoutX="13.0" layoutY="38.0" prefHeight="25.0" prefWidth="229.0" promptText="Enter Todo List Title " />
+        <TextField fx:id="todoDescription" layoutX="345.0" layoutY="38.0" prefHeight="25.0" prefWidth="336.0" promptText="Enter Description" />
+        <DatePicker fx:id="todoDueDate" layoutX="689.0" layoutY="38.0" prefHeight="25.0" prefWidth="132.0" promptText="Enter Due Date" />
+    </children>
+</AnchorPane>
