@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="implementing assignment 4 part 2: todo list app">
-      <change afterPath="$PROJECT_DIR$/uml/TodoAppClassDiagrams.puml" afterDir="false" />
+    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="completing uml and cleaning up redundant fields">
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +176,14 @@
       <option name="presentableId" value="Default" />
       <updated>1636827354024</updated>
     </task>
+    <task id="LOCAL-00001" summary="completing uml and cleaning up redundant fields">
+      <created>1636850123256</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636850123256</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,7 +201,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="implementing assignment 4 part 2: todo list app" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing assignment 4 part 2: todo list app" />
+    <MESSAGE value="completing uml and cleaning up redundant fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="completing uml and cleaning up redundant fields" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
