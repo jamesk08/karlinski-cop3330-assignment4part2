@@ -6,7 +6,7 @@
 1. Type the title of the todo list
 2. Click "Add List" button
 
-![img.png](readme images/img.png)
+![img.png](readme images\img.png)
 
 
 ### How to edit a todo list?
@@ -15,7 +15,7 @@
 3. Edit the title text.
 4. Click Save button.
 
-![img_1.png](readme images/img_1.png)
+![img_1.png](readme images\img_1.png)
 
 ### How to delete a todo list?
 1. Click on the todo list item that you want to delete from the todo list table.
