@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="adding user guide readme.md">
-      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/readme images/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/readme images/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/readme images/img_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/readme images/img_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/readme images/img_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/readme images/img_5.png" afterDir="false" />
+    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="attempt to display readme images">
+      <change beforePath="$PROJECT_DIR$/readme images/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/readmeImages/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme images/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/readmeImages/img_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme images/img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/readmeImages/img_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme images/img_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/readmeImages/img_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme images/img_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/readmeImages/img_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme images/img_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/readmeImages/img_5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +190,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636853825668</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="moving readme images in a folder to keep solution cleaner">
+      <created>1636853960102</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636853960102</updated>
+    </task>
+    <task id="LOCAL-00004" summary="attempt to display readme images">
+      <created>1636854022333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636854022333</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,7 +224,9 @@
     <MESSAGE value="implementing assignment 4 part 2: todo list app" />
     <MESSAGE value="completing uml and cleaning up redundant fields" />
     <MESSAGE value="adding user guide readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding user guide readme.md" />
+    <MESSAGE value="moving readme images in a folder to keep solution cleaner" />
+    <MESSAGE value="attempt to display readme images" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt to display readme images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
