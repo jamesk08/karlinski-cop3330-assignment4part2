@@ -33,13 +33,9 @@ public class EditTodoController implements Initializable
     public Todo selectedTodo;
     public TodoList selectedTodoList;
     private MainController mainController;
-    private DialogManager dialogManager;
 
     @Override public void initialize(URL url, ResourceBundle rb)
     {
-        // initialize dialog manager
-        dialogManager = new DialogManager();
-
         // populate todo status option combo box
         ObservableList<String> statusOptions = FXCollections.observableArrayList("Incomplete", "Complete");
         comboStatusOptions.setItems(statusOptions);
@@ -116,6 +112,7 @@ public class EditTodoController implements Initializable
         else
         {
             // warn user that a todo item was not selected
+            DialogManager dialogManager = new DialogManager();
             dialogManager.displayInfo("Please select a todo list to edit.", "Warning");
         }
     }

@@ -5,46 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="implementing assignment 4 part 2: todo list app">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/DialogManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/Startup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/Todo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoListManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodo.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodoList.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/Main.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListAppTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uml/TodoAppClassDiagrams.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +55,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="UML Sequence" />
       </list>
     </option>
   </component>
@@ -116,6 +80,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -230,17 +195,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java</url>
-          <line>50</line>
+          <line>46</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java</url>
-          <line>97</line>
+          <line>93</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java</url>
-          <line>69</line>
+          <line>65</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>

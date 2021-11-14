@@ -1,0 +1,134 @@
+@startuml
+class ucf.assignments.Startup
+{
+    + {static} void main(String[])
+    + void start(Stage)
+}
+
+class ucf.assignments.TodoList
+{
+    - String title
+    - ArrayList<Todo> todos
+    - int todoListId
+    + String getTitle()
+    + void setTitle(String)
+    + ArrayList<Todo> getTodos()
+    + void addTodos(Todo)
+    + int getTodoListId()
+    + int getTodoListIndex()
+}
+
+class ucf.assignments.EditTodoController
+{
+    + Todo selectedTodo
+    + TodoList selectedTodoList
+    - TextField editTodoDescription
+    - DatePicker todoDueDate
+    - ComboBox<String> comboStatusOptions
+    - MainController mainController
+    + void initialize(URL,ResourceBundle)
+    + void setupFields(Todo,TodoList)
+    + void setMainController(MainController)
+    - void saveTodo(ActionEvent)
+}
+
+class ucf.assignments.TodoManager
+{
+    + ObservableList<Todo> getTodos(ArrayList<Todo>)
+    + boolean validateTodoFields(String,LocalDate,String)
+    + void addTodo(TextField,DatePicker,TodoList,TableView<Todo>)
+    + void deleteSelectedTodo(TodoList,TableView<Todo>)
+}
+
+class ucf.assignments.TodoListManager
+{
+    - {static} String TODO_LIST_STORAGE_PATH
+    + ObservableList<TodoList> loadAllTodoListsFromStorage()
+    + File getTodoListFileByName(String)
+    + File getTodoListFileById(int)
+    + void addTodoList(TextField,TableView<TodoList>)
+    + void deleteSelectedTodoList(TodoList,TableView<TodoList>)
+    - TodoList retrieveLists(String)
+    - int findNextTodoListId(TableView<TodoList>)
+}
+
+class ucf.assignments.DialogManager
+{
+    + void displayInfo(String,String)
+    + void displayError(String,String)
+}
+
+class ucf.assignments.EditListController
+{
+    + TodoList selectedTodoList
+    - TextField listTitle
+    - MainController mainController
+    + void initialize(URL,ResourceBundle)
+    + void setupFields(TodoList)
+    + void setMainController(MainController)
+    - void editList(ActionEvent)
+}
+
+class ucf.assignments.Todo
+{
+    - int todoId
+    - String description
+    - String dueDate
+    - String status
+    + int getTodoId()
+    + int getTodoIndex()
+    + String getDescription()
+    + void setDescription(String)
+    + String getDueDate()
+    + void setDueDate(String)
+    + String getStatus()
+    + void setStatus(String)
+}
+
+class ucf.assignments.MainController
+{
+    ~ TableColumn<TodoList,String> title
+    ~ TableColumn<TodoList,String> description
+    ~ TableColumn<TodoList,String> dueDate
+    ~ TableColumn<TodoList,String> status
+    - {static} String TODO_CONTROLLER_RESOURCE_PATH
+    - {static} String TODO_LIST_CONTROLLER_RESOURCE_PATH
+    - {static} String TODO_LIST_STORAGE_PATH
+    - EditTodoController editTodoController
+    - EditListController editTodoListController
+    - TodoList selectedTodoList
+    - TableView<TodoList> tblTodoLists
+    - TextField todoListTitle
+    - TextField todoDescription
+    - DatePicker todoDueDate
+    - TableView<Todo> tblTodos
+    + void initialize(URL,ResourceBundle)
+    + void loadTodoLists(int)
+    + void loadTodos()
+    - void setupTodoListTable()
+    - void setupTodoTable()
+    - void addTodoList(ActionEvent)
+    - void addTodo(ActionEvent)
+    - void deleteSelectedTodoList(ActionEvent)
+    - void deleteSelectedTodo(ActionEvent)
+    - void openEditListWindow(ActionEvent)
+    - void openEditTodoWindow(ActionEvent)
+    - void openWindow(String,String,Todo)
+}
+
+ucf.assignments.DialogManager <|-- ucf.assignments.EditTodoController
+ucf.assignments.DialogManager <|-- ucf.assignments.EditListController
+ucf.assignments.DialogManager <|-- ucf.assignments.TodoManager
+ucf.assignments.DialogManager <|-- ucf.assignments.TodoListManager
+ucf.assignments.DialogManager <|-- ucf.assignments.MainController
+
+ucf.assignments.TodoListManager <|-- ucf.assignments.MainController
+ucf.assignments.TodoListManager <|-- ucf.assignments.EditListController
+ucf.assignments.TodoListManager <|-- ucf.assignments.EditTodoController
+ucf.assignments.TodoListManager <|-- ucf.assignments.TodoManager
+
+ucf.assignments.TodoManager <|-- ucf.assignments.MainController
+ucf.assignments.TodoManager <|-- ucf.assignments.EditTodoController
+ucf.assignments.TodoList <|-- ucf.assignments.TodoListManager
+ucf.assignments.Todo <|-- ucf.assignments.TodoManager
+@enduml
