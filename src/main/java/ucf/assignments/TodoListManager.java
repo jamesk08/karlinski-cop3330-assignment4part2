@@ -7,10 +7,7 @@ package ucf.assignments;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 
 import java.io.*;
 import java.text.MessageFormat;
@@ -19,7 +16,14 @@ import java.util.Objects;
 
 public class TodoListManager
 {
-    public static String TODO_LIST_STORAGE_PATH = "src/main/java/TodoLists";
+    public static String todoListStoragePath = "src\\main\\java\\TodoLists";
+
+    public TodoListManager() { }
+
+    public TodoListManager(String todoListStoragePath)
+    {
+        this.todoListStoragePath = todoListStoragePath;
+    }
 
     public ObservableList<TodoList> loadAllTodoListsFromStorage()
     {
@@ -27,7 +31,7 @@ public class TodoListManager
         ArrayList<TodoList> todoLists = new ArrayList<>();
 
         // make sure there is a directory to store todo lists, create if doesn't exist
-        File dir = new File(TODO_LIST_STORAGE_PATH);
+        File dir = new File(todoListStoragePath);
         if (!dir.isDirectory())
         {
             dir.mkdir();
@@ -49,55 +53,27 @@ public class TodoListManager
         return observableTodoLists;
     }
 
-    private TodoList retrieveLists(String filename)
-    {
-        // get file path and initialize file object
-        TodoList todoList = null;
-        File todoListFileName = getTodoListFileByName(filename);
-
-        try
-        {
-            // read file and initialize a new todo object using file data
-            FileInputStream output = new FileInputStream(todoListFileName);
-            ObjectInputStream objInput = new ObjectInputStream(output);
-            todoList = (TodoList) objInput.readObject();
-
-            // close the reader
-            objInput.close();
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-
-        // return the todo list object
-        return todoList;
-    }
-
     public File getTodoListFileByName(String fileName)
     {
         // returned a combined path of the root directory and file path
-        String todoListFilePath = MessageFormat.format("{0}\\{1}", TODO_LIST_STORAGE_PATH, fileName);
+        String todoListFilePath = MessageFormat.format("{0}\\{1}", todoListStoragePath, fileName);
         return new File(todoListFilePath);
     }
 
     public File getTodoListFileById(int todoListId)
     {
         // return todo list path for given todo list
-        String todoListPath = MessageFormat.format("{0}/{1}.txt", TODO_LIST_STORAGE_PATH, todoListId);
+        String todoListPath = MessageFormat.format("{0}/{1}.txt", todoListStoragePath, todoListId);
         return new File(todoListPath);
     }
 
-    public void addTodoList(TextField todoListTitle, TableView<TodoList> tblTodoLists)
+    public void addTodoList(String todoListTitle, ObservableList<TodoList> todoLists)
     {
-        // get todo list title input and validate
-        String title = todoListTitle.getText();
-
         // create todo list storage directory if doesn't exist
-        File dir = new File(TODO_LIST_STORAGE_PATH);
+        File dir = new File(todoListStoragePath);
         if (!dir.isDirectory()) dir.mkdir();
 
-        if (title.trim().isEmpty())
+        if (todoListTitle.trim().isEmpty())
         {
             DialogManager dialogManager = new DialogManager();
             dialogManager.displayInfo("Please enter title for this todo list.", "Warning");
@@ -105,10 +81,10 @@ public class TodoListManager
         else
         {
             // generate the next todo list id
-            int newTodoListId = findNextTodoListId(tblTodoLists.getItems());
+            int newTodoListId = findNextTodoListId(todoLists);
 
             // create new todo list object
-            TodoList todoList = new TodoList(newTodoListId, title);
+            TodoList todoList = new TodoList(newTodoListId, todoListTitle);
             File todoListFile = getTodoListFileById(todoList.getTodoListId());
             try
             {
@@ -126,9 +102,6 @@ public class TodoListManager
                 FileOutputStream output = new FileOutputStream(todoListFile);
                 ObjectOutputStream objOutput = new ObjectOutputStream(output);
                 objOutput.writeObject(todoList);
-
-                // clear title input field for next entry
-                todoListTitle.clear();
 
                 output.close();
             }
@@ -179,5 +152,30 @@ public class TodoListManager
             TodoList todoList = todoLists.get(todoLists.size() - 1);
             return todoList.getTodoListId() + 1;
         }
+    }
+
+    private TodoList retrieveLists(String filename)
+    {
+        // get file path and initialize file object
+        TodoList todoList = null;
+        File todoListFileName = getTodoListFileByName(filename);
+
+        try
+        {
+            // read file and initialize a new todo object using file data
+            FileInputStream output = new FileInputStream(todoListFileName);
+            ObjectInputStream objInput = new ObjectInputStream(output);
+            todoList = (TodoList) objInput.readObject();
+
+            // close the reader
+            objInput.close();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        // return the todo list object
+        return todoList;
     }
 }

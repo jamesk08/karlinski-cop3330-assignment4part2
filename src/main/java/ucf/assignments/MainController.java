@@ -129,7 +129,13 @@ public class MainController implements Initializable
     @FXML private void addTodoList(ActionEvent event)
     {
         TodoListManager todoListManager = new TodoListManager();
-        todoListManager.addTodoList(todoListTitle, tblTodoLists);
+        todoListManager.addTodoList(
+            todoListTitle.getText(),
+            tblTodoLists.getItems()
+        );
+
+        // clear title input field for next entry
+        todoListTitle.clear();
 
         // refresh todo list;
         loadTodoLists(0);

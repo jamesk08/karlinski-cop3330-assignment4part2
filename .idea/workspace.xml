@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="attempt to display readme images">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="deleting unused test class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoListManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoListManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,26 +100,13 @@
       <recent name="C:\Users\uzr\IdeaProjects\karlinski-cop3330-assignment4part2\src\main\resources\ucf.assignments" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.karlinski-cop3330-assignment4part2 [run]">
-    <configuration name="Startup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ucf.assignments.Startup" />
-      <module name="karlinski-cop3330-assignment4part2.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ucf.assignments.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TodoListManagerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TodoListManagerTests.getTodoListFileById_shouldReturnExpected">
+    <configuration name="TodoListManagerTests.addTodoList_Should_Create_New_TodoList_File" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ucf.assignments.TodoListManagerTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ucf.assignments.TodoListManagerTests.addTodoList_Should_Create_New_TodoList_File&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -157,23 +143,44 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="karlinski-cop3330-assignment4part2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoListManagerTests.getTodoListFileById_shouldReturnExpected" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;ucf.assignments.TodoListManagerTests.getTodoListFileById_shouldReturnExpected&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoListManagerTests.getTodoListFileByName_shouldReturnExpected" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ucf.assignments.TodoListManagerTests.getTodoListFileByName_shouldReturnExpected&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -201,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.karlinski-cop3330-assignment4part2 [run]" />
+        <item itemvalue="Gradle.TodoListManagerTests.getTodoListFileById_shouldReturnExpected" />
+        <item itemvalue="Gradle.TodoListManagerTests.getTodoListFileByName_shouldReturnExpected" />
         <item itemvalue="Gradle.TodoListManagerTests.findNextTodoListId_Should_Return_Expected" />
-        <item itemvalue="Gradle.TodoListManagerTests" />
-        <item itemvalue="Gradle.karlinski-cop3330-assignment4part2 [build]" />
-        <item itemvalue="Application.Startup" />
+        <item itemvalue="Gradle.TodoListManagerTests.addTodoList_Should_Create_New_TodoList_File" />
+        <item itemvalue="Gradle.karlinski-cop3330-assignment4part2 [run]" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636854085503</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="separating todo list storage directories for main app and test output">
+      <created>1636940903816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1636940903816</updated>
+    </task>
+    <task id="LOCAL-00007" summary="deleting unused test class">
+      <created>1636940940605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1636940940605</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,7 +296,9 @@
     <MESSAGE value="adding user guide readme.md" />
     <MESSAGE value="moving readme images in a folder to keep solution cleaner" />
     <MESSAGE value="attempt to display readme images" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt to display readme images" />
+    <MESSAGE value="separating todo list storage directories for main app and test output" />
+    <MESSAGE value="deleting unused test class" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleting unused test class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -295,15 +318,27 @@
           <line>65</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ucf/assignments/TodoListManager.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="GradleRunConfiguration">
-        <watch expression="todoListList.size() - 1" language="JAVA" />
-        <watch expression="todoListList.get(todoListList.size() - 1)" language="JAVA" />
-        <watch expression="todoList = todoListList.get(todoListList.size() - 1)" language="JAVA" />
-        <watch expression="todoList.getTodoListId()" language="JAVA" />
-        <watch expression="todoList = todoListList.get(todoListList.size() - 1)" language="JAVA" />
+        <watch expression="file.getPath()" language="JAVA" />
+        <watch expression="EXPECTED_PATH" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
