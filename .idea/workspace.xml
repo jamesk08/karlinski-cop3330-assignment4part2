@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="minor updates to UML">
+    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="Updating the assignment author comments to say 4 instead of 5 to following the instructions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/DialogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/DialogManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/Startup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/Todo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoListManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoListManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodoList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodoList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ucf/assignments/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/Main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uml/TodoAppClassDiagrams.puml" beforeDir="false" afterPath="$PROJECT_DIR$/uml/TodoAppClassDiagrams.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636945046422</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updating the assignment author comments to say 4 instead of 5 to following the instructions.">
+      <created>1636945855250</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1636945855250</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,34 +330,35 @@
     <MESSAGE value="deleting unused test class" />
     <MESSAGE value="adding tests for TodoListManager" />
     <MESSAGE value="minor updates to UML" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor updates to UML" />
+    <MESSAGE value="Updating the assignment author comments to say 4 instead of 5 to following the instructions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating the assignment author comments to say 4 instead of 5 to following the instructions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java</url>
-          <line>46</line>
+          <line>45</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java</url>
-          <line>93</line>
+          <line>92</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java</url>
-          <line>65</line>
+          <line>64</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java</url>
-          <line>81</line>
+          <line>79</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java</url>
-          <line>95</line>
+          <line>93</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>

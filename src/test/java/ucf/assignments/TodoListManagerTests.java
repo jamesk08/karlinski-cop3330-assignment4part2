@@ -8,12 +8,10 @@ package ucf.assignments;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.junit.jupiter.api.Test;
-
 import java.io.File;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Objects;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TodoListManagerTests
