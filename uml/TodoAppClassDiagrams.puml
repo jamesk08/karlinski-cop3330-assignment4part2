@@ -46,10 +46,10 @@ class ucf.assignments.TodoListManager
     + ObservableList<TodoList> loadAllTodoListsFromStorage()
     + File getTodoListFileByName(String)
     + File getTodoListFileById(int)
-    + void addTodoList(TextField,TableView<TodoList>)
+    + void addTodoList(String,ObservableList<TodoList>)
     + void deleteSelectedTodoList(TodoList,TableView<TodoList>)
     - TodoList retrieveLists(String)
-    - int findNextTodoListId(TableView<TodoList>)
+    - int findNextTodoListId(ObservableList<TodoList>)
 }
 
 class ucf.assignments.DialogManager
