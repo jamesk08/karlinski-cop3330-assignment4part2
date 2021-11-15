@@ -19,7 +19,7 @@ import java.util.Objects;
 
 public class TodoListManager
 {
-    private static final String TODO_LIST_STORAGE_PATH = "TodoLists";
+    public static String TODO_LIST_STORAGE_PATH = "src/main/java/TodoLists";
 
     public ObservableList<TodoList> loadAllTodoListsFromStorage()
     {
@@ -105,7 +105,7 @@ public class TodoListManager
         else
         {
             // generate the next todo list id
-            int newTodoListId = findNextTodoListId(tblTodoLists);
+            int newTodoListId = findNextTodoListId(tblTodoLists.getItems());
 
             // create new todo list object
             TodoList todoList = new TodoList(newTodoListId, title);
@@ -169,17 +169,14 @@ public class TodoListManager
         }
     }
 
-    private int findNextTodoListId(TableView<TodoList> tblTodoLists)
+    public int findNextTodoListId(ObservableList<TodoList> todoLists)
     {
-        // get all items from table view
-        ObservableList<TodoList> todoListList = tblTodoLists.getItems();
-
         // if view table is empty it means this is first item
-        if (todoListList == null || todoListList.size() == 0) return 1;
+        if (todoLists == null || todoLists.size() == 0) return 1;
         else
         {
             // get the ID of latest todo list
-            TodoList todoList = todoListList.get(todoListList.size() - 1);
+            TodoList todoList = todoLists.get(todoLists.size() - 1);
             return todoList.getTodoListId() + 1;
         }
     }

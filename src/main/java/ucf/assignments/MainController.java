@@ -31,7 +31,6 @@ public class MainController implements Initializable
 {
     private static final String TODO_CONTROLLER_RESOURCE_PATH = "EditTodo.fxml";
     private static final String TODO_LIST_CONTROLLER_RESOURCE_PATH = "EditTodoList.fxml";
-    private static final String TODO_LIST_STORAGE_PATH = "TodoLists";
 
     @FXML private EditTodoController editTodoController;
     @FXML private EditListController editTodoListController;

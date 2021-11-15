@@ -24,3 +24,5 @@ hs_err_pid*
 /TodoLists/
 /build/
 /.gradle/
+/src/main/java/TodoLists/
+/src/test/java/TodoLists/
