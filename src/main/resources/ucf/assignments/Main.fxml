@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<!-- UCF COP3330 Fall 2021 Assignment 5 Solution -->
+<!-- UCF COP3330 Fall 2021 Assignment 4 Solution -->
 <!-- Copyright 2021 James Karlinski -->
 
 <AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.MainController">

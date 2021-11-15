@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="adding tests for TodoListManager">
+    <list default="true" id="513036be-793a-4107-a13a-e7fa1ad449fc" name="Changes" comment="minor updates to UML">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/DialogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/DialogManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/EditTodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/Todo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoListManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoListManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/TodoManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodoList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/EditTodoList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ucf/assignments/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uml/TodoAppClassDiagrams.puml" beforeDir="false" afterPath="$PROJECT_DIR$/uml/TodoAppClassDiagrams.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636944402980</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="minor updates to UML">
+      <created>1636945046421</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1636945046422</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,7 +331,8 @@
     <MESSAGE value="separating todo list storage directories for main app and test output" />
     <MESSAGE value="deleting unused test class" />
     <MESSAGE value="adding tests for TodoListManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding tests for TodoListManager" />
+    <MESSAGE value="minor updates to UML" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor updates to UML" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -333,12 +354,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java</url>
-          <line>76</line>
+          <line>81</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ucf/assignments/TodoListManagerTests.java</url>
-          <line>90</line>
+          <line>95</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
